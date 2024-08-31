@@ -1,43 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --yellow: #F8AF23;
+    --pink: #F46275;
+    --blue: #63BCE7;
+    --orange: #FC5D3D;
+    --gray: #CECECE;
+    --darkblue: #3F3679;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    width: 100%;
-    background-color: rgba(128, 128, 128, 0.297);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ul{
+    list-style: none;
 }
 
-main{
-    width: 85%;
-    height: 100%;
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    background-color: var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins";
+}
+
+.apresentacaoContainer{
+    width: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-#titulo{
-    width: 600px;
-    margin: 10px;
-    border-bottom: 1px solid grey;
-    text-align: center;
+.apresentacaoContainer nav{
+    width: 80%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+
+.apresentacaoContainer ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContainer{
+    width: 40%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+}
+
+.imgContainer .javascriptImg{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 35px;
+    z-index: 99;
+}
+
+.imgContainer .htmlImg{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 1;
+    bottom: 20px;
+    left: 50px;
+    transform: rotate(35deg);
+}
+
+.imgContainer .cssImg{
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    z-index: 0;
+    bottom: 15px;
+    right: 70px;
+    transform:rotate(-35deg);
+}
+
+.textContainer{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+}
+
+.textContainer span{
+    color: var(--yellow)
+}
+
+.scrollContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 
 }
 
-.listaDeExercicios{
-    background-color: blanchedalmond;
-    border: 1px solid grey;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px 10px;
+.scrollContainer img{
+    height: 50px;
+    width: 50px;
 }
 
-button{
-    padding: 5px;
-    cursor: pointer;
+#exercicio{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+#exercicio h2{
+    margin-bottom: 1rem;
+}
+
+.cardContainers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+
+.card{
+    border: 2px solid var(--darkblue) ;
+    border-radius: 1rem;
+    width: 250px;
+    height: 210px;
+    padding: 1rem;
+    background-color: var(--yellow );
+}
+
+.buttonCard{
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.card .round{
+    width: 30px;
+    height: 30px;
+    background-color: var(--pink);
+    border: 2px solid var(--darkblue);
+    border-radius: 50%;
+    margin-right: 0.25rem;
+}
+
+.card button{
+    width: 80%;
+    height: 30px;
+    background-color: var(--pink);
+    border: 2px solid var(--darkblue);
+    border-radius: 1rem;
+
 }
