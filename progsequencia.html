@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exerciciosStyle.css">
+    <title>Programação em Sequencia</title>
+</head>
+<body>
+
+    <header>
+        <div class="voltarButton">
+            <a href="index.html"><img src="./assets/reply.png" alt="back icon"></a>
+        </div>
+        <div class="header">
+            <h1>Programação em Sequencia</h1>
+            <p>A execução em sequência em programação é o processo onde as instruções são executadas uma após a outra, na ordem em que aparecem no código.</p>
+        </div>
+        
+    </header>
+
+    <section>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>01</span>
+                <p>Desenvolver um programa que pergunte ao usuário o seu nome completo e seu sexo. Em seguida, o programa
+                deve apresentar os dados anteriormente informados.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let nome  = prompt("Qual seu nome?")<br>
+                        let sexo = prompt("Qual seu sexo?")<br>
+                        alert(`Seu nome é ${nome} e seu sexo é ${sexo}`)</p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio01()">Rodar exercicio</button>
+            </div>
+        </div>
+
+        <div class="questionCard">
+            <div class="questionText">
+                <span>02</span>
+                <p>Elaborar um programa que pergunte quatro valores inteiros e apresente 2 resultados:<br>
+                    a Resultado de suas adições<br>
+                    b Resultado de suas multiplicações<br></p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let valor1 = parseInt(prompt("Digite o primeiro valor inteiro:"));<br>
+                        let valor2 = parseInt(prompt("Digite o segundo valor inteiro:"));<br>
+                        let valor3 = parseInt(prompt("Digite o terceiro valor inteiro:"));<br>
+                        let valor4 = parseInt(prompt("Digite o quarto valor inteiro:"));<br>
+                    
+                        let soma = valor1 + valor2 + valor3 + valor4;<br>
+                        let multiplicações = valor1 * valor2 * valor3 * valor4;<br>
+                    
+                        alert(`Os valores digitados foram: ${valor1}, ${valor2}, ${valor3}, ${valor4}. A soma dos valores é ${soma} e a multiplicação é ${multiplicações}`);<br></p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio02()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>03</span>
+                <p>Elaborar um programa que pergunte quatro valores inteiros e apresente 2 resultados:<br>
+                    a Resultado de suas adições<br>
+                    b Resultado de suas multiplicações<br></p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let valor1 = parseInt(prompt("Digite o primeiro valor inteiro:"));<br>
+                        let valor2 = parseInt(prompt("Digite o segundo valor inteiro:"));<br>
+                        let valor3 = parseInt(prompt("Digite o terceiro valor inteiro:"));<br>
+                        let valor4 = parseInt(prompt("Digite o quarto valor inteiro:"));<br>
+                    
+                        let soma = valor1 + valor2 + valor3 + valor4;<br>
+                        let multiplicações = valor1 * valor2 * valor3 * valor4;<br>
+                    
+                        alert(`Os valores digitados foram: ${valor1}, ${valor2}, ${valor3}, ${valor4}. A soma dos valores é ${soma} e a multiplicação é ${multiplicações}`);<br></p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio03()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>04</span>
+                <p>Fazer um programa que pergunte um número inteiro e apresente o seu antecessor e seu sucessor.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let numero = parseInt(prompt("Digite um numero:"));<br>
+                        let antecessor = numero - 1;<br>
+                        let sucessor = numero + 1;<br>
+                        
+                        alert(`O numero digitado foi o ${numero}. Seu antecessor é o ${antecessor} e seu sucessor é o ${sucessor}`)<br></p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio02()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>05</span>
+                <p>Fazer um programa que pergunte o salário de um funcionário e apresente este salário com um aumento de 15%.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let aumento = 0.15;<br>
+                        let salario = parseFloat(prompt('Qual o seu salario?'));<br>
+                        let salarioAjustado = salario + (salario * aumento);<br>
+                        
+                        alert(`O seu salario era de R$ ${salario}. Seu novo salario após ajuste é de R$ ${salarioAjustado}`)<br></p>
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio05()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>06</span>
+                <p>Fazer um programa que pergunte uma temperatura ao usuário, em graus Fahrenheit, e apresente esta
+                    temperatura convertida em graus Celsius. A fórmula da conversão é c	=	(f	–	32)	x	5	:	9	, onde c	 é a temperatura
+                    em graus Celsius e f		em Fahrenheit.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let temperaturaFahrenheit = parseFloat(prompt("Digite a temperatura em Fahrenheit: "));<br>
+                        let temperaturaCelsius = (temperaturaFahrenheit - 32) * 5 / 9;<br>
+                        
+                        alert(`A temperatura em Fahrenheit é de ${temperaturaFahrenheit} e em Celsius é de ${temperaturaCelsius}`)<br></p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio06()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>07</span>
+                <p>Fazer um algoritmo que pergunte 3 números e apresente a média aritmética entre estes 3 números</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let numero1 = parseFloat(prompt("Digite o primeiro numero: "));<br>
+                        let numero2 = parseFloat(prompt("Digite o segundo numero: "));<br>
+                        let numero3 = parseFloat(prompt("Digite o terceiro numero: "));<br>
+                        let media = (numero1 + numero2 + numero3) / 3;<br>
+                        
+                        alert(`Os numeros digitados foram: ${numero1}, ${numero2} e ${numero3}. A média aritmetica é ${media}.`)<br></p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio07()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>08</span>
+                <p>Fazer um programa que calcule e apresente a quantidade de litros que um automóvel gastará em uma viagem. O
+                    programa deve coletar as seguintes informações: Distância a percorrer na viagem, em quilômetros; qual é o
+                    valor do consumo médio do automóvel, em quilômetros por litro.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let distancia = parseFloat(prompt("Digite a distancia, em quilometros, a percorrer:"));<br>
+                        let valorConsumoMedio = parseFloat(prompt("Digite o consumo medio, em quilometros, do veiculo:"))<br>
+                        let qtdLitros = distancia / valorConsumoMedio;<br>
+                    
+                        alert(`Voce vai percorrer ${distancia}Km e consumira cerca de ${qtdLitros}lts de gasolina.`)<br></p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio08()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>09</span>
+                <p>Fazer um algoritmo que pergunte 1 número e apresente: <br>
+                    a O próprio número <br>
+                    b O quadrado deste número <br>
+                    c A raiz quadrada deste número <br></p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let numero = parseFloat(prompt("Digite um numero:"));<br>
+                        let numeroQuadrado = Math.pow(numero, 2);<br>
+                        let numeroRaiz = Math.sqrt(numero);<br>
+                        
+                        alert(`O numero digitado foi: ${numero}. O numero ao quadrado é ${numeroQuadrado} e a raiz quadrada é ${numeroRaiz}`)<br></p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio09()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>10</span>
+                <p>Fazer um algoritmo que efetue o cálculo do valor de uma prestação em atraso, utilizando a fórmula 
+                    prestação	=	valor	+	(valor	x	(taxa	:	100)	x	tempo	em	dias).</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let prestacao = parseFloat(prompt("Digite o valor da prestação:"));<br>
+                        let diasAtraso = parseInt(prompt("Quantos dias esta em atraso?"));<br>
+                        let taxa = parseFloat(prompt("Qual a taxa para atrasos?"));<br>
+                        
+                        let prestacaoAtualizada = prestacao + (prestacao * (taxa / 100) * diasAtraso); <br>
+                        
+                        alert(`A prestação original era de R$${prestacao} e estava em atraso em ${diasAtraso} dias. A taxa de atraso é de ${taxa}% ao dia. Sua parcela atualizada é de: R$${prestacaoAtualizada}`)<br></p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio10()">Rodar exercicio</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="./Programação em Sequencia/Exercicio01.js"></script>
+</body>
+</html>
