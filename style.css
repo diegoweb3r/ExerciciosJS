@@ -172,6 +172,9 @@ span{
     background-color: var(--yellow );
 }
 
+.card h3{
+    height:60px ;
+}
 .card p{
     height: 60px;
     font-size: 12px;
