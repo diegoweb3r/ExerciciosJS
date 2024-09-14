@@ -44,7 +44,7 @@ function exercicio04(){
         i++;
     }
     
-    console.log(soma)
+    alert(soma)
 }
 
 /* Desenvolver um programa que apresente os resultados de uma tabela de um número qualquer. Ela deve ser
@@ -240,7 +240,7 @@ function exercicio14(){
         i = 0;
         
         while(i <= 10){
-            console.log(`${b} . ${i} = ${b*i}`)
+            alert(`${b} . ${i} = ${b*i}`)
             i++;
         }
 
@@ -263,5 +263,5 @@ function exercicio15(){
         fatorial *= i;
         i--;
     }
-    console.log(`5! = ${fatorial}`)
+    alert(`5! = ${fatorial}`)
 }

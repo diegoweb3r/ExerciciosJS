@@ -23,15 +23,18 @@
         <div class="questionCard">
             <div class="questionText">
                 <span>01</span>
-                <p>Desenvolver um programa que pergunte ao usuário o seu nome completo e seu sexo. Em seguida, o programa
-                deve apresentar os dados anteriormente informados.</p>
+                <p>Desenvolver um programa que exiba os números de 1 a 100</p>
+                <p class="consoleAlert">Esse exericio é resolvido através do console. Abra a opção de inspecionar para rodar o exercicio.</p>
             </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let nome  = prompt("Qual seu nome?")<br>
-                        let sexo = prompt("Qual seu sexo?")<br>
-                        alert(`Seu nome é ${nome} e seu sexo é ${sexo}`)</p>
+                    <p>  let i = 1;<br>
+
+                        while (i &lt;= 100){<br>
+                            console.log(i)<br>
+                            i++;<br>
+                        }</p>
                 
                 </details>
             </div>
@@ -43,22 +46,18 @@
         <div class="questionCard">
             <div class="questionText">
                 <span>02</span>
-                <p>Elaborar um programa que pergunte quatro valores inteiros e apresente 2 resultados:<br>
-                    a Resultado de suas adições<br>
-                    b Resultado de suas multiplicações<br></p>
-            </div>
+                <p>Desenvolver um programa que exiba os números em ordem decrescente de 100 até 1<br>
+                    <p class="consoleAlert">Esse exericio é resolvido através do console. Abra a opção de inspecionar para rodar o exercicio.</p>
+                </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let valor1 = parseInt(prompt("Digite o primeiro valor inteiro:"));<br>
-                        let valor2 = parseInt(prompt("Digite o segundo valor inteiro:"));<br>
-                        let valor3 = parseInt(prompt("Digite o terceiro valor inteiro:"));<br>
-                        let valor4 = parseInt(prompt("Digite o quarto valor inteiro:"));<br>
-                    
-                        let soma = valor1 + valor2 + valor3 + valor4;<br>
-                        let multiplicações = valor1 * valor2 * valor3 * valor4;<br>
-                    
-                        alert(`Os valores digitados foram: ${valor1}, ${valor2}, ${valor3}, ${valor4}. A soma dos valores é ${soma} e a multiplicação é ${multiplicações}`);<br></p>
+                    <p>   let i = 100;<br>
+
+                        while (i > 0){<br>
+                            console.log(i)<br>
+                            i--;<br>    
+                        }</p>
                 
                 </details>
             </div>
@@ -69,22 +68,18 @@
         <div class="questionCard">
             <div class="questionText">
                 <span>03</span>
-                <p>Elaborar um programa que pergunte quatro valores inteiros e apresente 2 resultados:<br>
-                    a Resultado de suas adições<br>
-                    b Resultado de suas multiplicações<br></p>
+                <p>Desenvolver um programa que apresente os quadrados dos números inteiros de 15 a 200.</p>
+                <p class="consoleAlert">Esse exericio é resolvido através do console. Abra a opção de inspecionar para rodar o exercicio.</p>
             </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let valor1 = parseInt(prompt("Digite o primeiro valor inteiro:"));<br>
-                        let valor2 = parseInt(prompt("Digite o segundo valor inteiro:"));<br>
-                        let valor3 = parseInt(prompt("Digite o terceiro valor inteiro:"));<br>
-                        let valor4 = parseInt(prompt("Digite o quarto valor inteiro:"));<br>
-                    
-                        let soma = valor1 + valor2 + valor3 + valor4;<br>
-                        let multiplicações = valor1 * valor2 * valor3 * valor4;<br>
-                    
-                        alert(`Os valores digitados foram: ${valor1}, ${valor2}, ${valor3}, ${valor4}. A soma dos valores é ${soma} e a multiplicação é ${multiplicações}`);<br></p>
+                    <p>let i = 15;<br>
+
+                        while (i &lt;= 200){<br>
+                            console.log(Math.pow(i, 2));<br>
+                            i++;<br>
+                        }</p>
                 
                 </details>
             </div>
@@ -95,36 +90,52 @@
         <div class="questionCard">
             <div class="questionText">
                 <span>04</span>
-                <p>Fazer um programa que pergunte um número inteiro e apresente o seu antecessor e seu sucessor.</p>
+                <p>Desenvolver um programa que apresente o valor da soma dos cem primeiros números inteiros (1 + 2 + 3 + 4 + ...
+                    + 97 + 98 + 99 + 100) </p>
             </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let numero = parseInt(prompt("Digite um numero:"));<br>
-                        let antecessor = numero - 1;<br>
-                        let sucessor = numero + 1;<br>
+                    <p> let i = 1;<br>
+                        let soma = 0;<br>
                         
-                        alert(`O numero digitado foi o ${numero}. Seu antecessor é o ${antecessor} e seu sucessor é o ${sucessor}`)<br></p>
+                        while(i &lt;= 100){<br>
+                            soma += i;<br>
+                            i++;<br>
+                        }<br>
+                        
+                        alert(soma)<br></p>
                 
                 </details>
             </div>
             <div class="questionButtons">
-                <button onClick="exercicio02()">Rodar exercicio</button>
+                <button onClick="exercicio04()">Rodar exercicio</button>
             </div>
         </div>
         <div class="questionCard">
             <div class="questionText">
                 <span>05</span>
-                <p>Fazer um programa que pergunte o salário de um funcionário e apresente este salário com um aumento de 15%.</p>
+                <p>Desenvolver um programa que apresente os resultados de uma tabela de um número qualquer. Ela deve ser<br>
+                    impressa no seguinte formato:<br>
+                    Considerando como exemplo o fornecimento do número 2<br>
+                    2 . 1 = 2<br>
+                    2 . 2 = 4<br>
+                    2 . 3 = 6<br>
+                    2 . 4 = 8<br>
+                    2 . 5 = 10<br>
+                    (...)<br>
+                    2 . 10 = 20<br></p>
             </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let aumento = 0.15;<br>
-                        let salario = parseFloat(prompt('Qual o seu salario?'));<br>
-                        let salarioAjustado = salario + (salario * aumento);<br>
-                        
-                        alert(`O seu salario era de R$ ${salario}. Seu novo salario após ajuste é de R$ ${salarioAjustado}`)<br></p>
+                    <p>    let i = 1;<br>
+                        let tabuada = 5;<br>
+                    
+                        while (i &lt;= 10){<br>
+                        console.log(tabuada + " . " + i + " = " + tabuada * i)<br>
+                        i++;
+                    }<br></p>
                 </details>
             </div>
             <div class="questionButtons">
@@ -243,6 +254,6 @@
         </div>
     </section>
     
-    <script src="exerciciosProgSequencia.js"></script>
+    <script src="exerciciosProgLacos.js"></script>
 </body>
 </html>
