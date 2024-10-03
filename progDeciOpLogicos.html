@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="exerciciosStyle.css">
+    <title>Programação com Decisão Op. Logicos</title>
+</head>
+<body>
+
+    <header>
+        <div class="voltarButton">
+            <a href="index.html"><img src="./assets/reply.png" alt="back icon"></a>
+        </div>
+        <div class="header">
+            <h1>Programação com Decisão Op. Logicos</h1>
+            <p>A execução em sequência em programação é o processo onde as instruções são executadas uma após a outra, na ordem em que aparecem no código.</p>
+        </div>
+        
+    </header>
+
+    <section>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>01</span>
+                <p>Desenvolver um programa que pergunte um número. Se este número for maior que 20, então ele deverá exibir a 
+                    metade deste número, senão, ele deverá exibir o número sem alterações.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> function exercicio01(){<br>
+                        let numero = parseFloat(prompt("Digite um numero:"))<br>
+                    
+                        if (numero > 20){<br>
+                            alert("A metade do numero digitado é " + (numero/2))<br>
+                        } else{<br>
+                            alert("O numero digitado é " + numero)<br>
+                        }<br>
+                    }</p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio01()">Rodar exercicio</button>
+            </div>
+        </div>
+
+        <div class="questionCard">
+            <div class="questionText">
+                <span>02</span>
+                <p>Desenvolver um programa que permita ao aluno responder qual a capital do Brasil. O programa deverá exibir se 
+                    a resposta está certa ou errada.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let capital = prompt("Digite a capital do Brasil");<br>
+
+                        if(capital.toLocaleUpperCase == BRASILIA){<br>
+                            alert("Sua resposta esta correta")<br>
+                        } else{<br>
+                            alert("Sua resposta esta errada")<br>
+                        }</p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio02()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>03</span>
+                <p>Desenvolver um programa que pergunte um número, e apresente como resposta se o referido número é par ou 
+                é ímpar.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let numero = parseFloat(prompt("Digite um numero"))<br>
+
+                        if(numero % 2 == 0){<br>
+                            alert("O numero " + numero + "é par")<br>
+                        } else{<br>
+                            alert("O numero " + numero + "é impar")<br>
+                        }</p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio03()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>04</span>
+                <p>Desenvolver  um  programa  que  pergunte  um  valor  numérico  inteiro  e  faça  a  exibição  desse  valor  caso  seja 
+                    divisível por 4 e 5. Não sendo divisível por 4 e 5, o programa deverá exibir a mensagem “Valor não é divisível por 
+                    4 e 5”.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p>let numero = parseInt(prompt("Digite um numero inteiro"))<br>
+
+                        if(numero % 4 == 0 && numero % 5 == 0){<br>
+                            alert("O numero é divisivel por 4 ou 5")<br>
+                        } else{<br>
+                            alert("O valor não é divisivel por 4 e 5")<br>
+                        }</p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio02()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>05</span>
+                <p>Desenvolver um programa que pergunte 4 notas escolares de um aluno e exiba mensagem informando que o 
+                    aluno  foi  aprovado  se  a  média  escolar  for  maior  ou  igual  a  5.  Se  o  aluno  não  foi  aprovado,  indicar  uma 
+                    mensagem informando essa condição. Apresentar junto com a mensagem de aprovação ou reprovação o valor 
+                    da média obtida pelo aluno.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let nota1 = parseFloat(prompt("Digite a primeira nota: "))<br>
+                        let nota2 = parseFloat(prompt("Digite a segunda nota: "))<br>
+                        let nota3 = parseFloat(prompt("Digite a terceira nota: "))<br>
+                        let nota4 = parseFloat(prompt("Digite a quarta nota: "))<br>
+                        media = (nota1 + nota2 + nota3 + nota4) / 4<br>
+                    
+                        if(media >= 5){<br>
+                            alert("O aluno foi aprovado com média " + media)<br>
+                        } else {<br>
+                            alert("O aluno foi reprovado com média " + media)<br>
+                        }</p>
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio05()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>06</span>
+                <p>Desenvolver um programa que pergunte dois valores numéricos inteiros e apresente o valor da diferença entre o 
+                    maior valor e o menor valor lido.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let numero1 = parseInt(prompt("Digite um numero"))<br>
+                        let numero2 = parseInt(prompt("Digite outro numero"))<br>
+                    
+                        if(numero1 > numero2){<br>
+                            alert("O maior numero digitado foi " + numero1 +" e o menor foi " + numero2 + " e a diferenca entre eles é de " + (numero1 - numero2))<br>
+                        } else{<br>
+                            alert("O maior numero digitado foi " + numero2 +" e o menor foi " + numero1 + " e a diferenca entre eles é de " + (numero2 - numero1))<br>
+                        }</p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio06()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>07</span>
+                <p>Desenvolver um programa que pergunte um valor inteiro positivo ou negativo, e exiba como resposta o módulo 
+                    deste valor, ou seja, o número lido como sendo positivo.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let numero = parseInt(prompt("Digite um valor"))<br>
+
+                        if(numero >= 0){<br>
+                            alert("O valor digitado foi" + numero)<br>
+                        } else{<br>
+                            alert("O valor digitado foi " + (-numero))<br>
+                        }</p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio07()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>08</span>
+                <p>Desenvolver um programa que pergunte um número inteiro qualquer e verifique se ele está na faixa de 1 a 10.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p>let numero = parseInt(prompt("Digite um numero de 1 a 10"))
+                        if(numero &lt; 1 || numero > 10){
+                            alert("Voce digitou um numero fora do intervalo solicitado")
+                        } else{
+                            alert("Voce digitou o numero: " + numero)
+                        }</p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio08()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>09</span>
+                <p>Desenvolver um programa que pergunte um número e exiba a informação de que ele é positivo, negativo ou 
+                nulo.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p>let numero = parseInt(prompt("Digite um numero"))<br>
+
+                        if(isNaN(numero)){<br>
+                            alert("Valor digitado invalido")<br>
+                        } else if (numero &lt; 0){<br>
+                            alert("O numero digitado foi: " + numero + " e ele é negativo")<br>
+                        }<br>
+                        else if (numero >= 0){<br>
+                            alert("O numero digitado foi: " + numero + " e ele é positivo")<br>
+                        }<br></p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio09()">Rodar exercicio</button>
+            </div>
+        </div>
+        <div class="questionCard">
+            <div class="questionText">
+                <span>10</span>
+                <p>Desenvolver  um  programa  que  pergunte  dois  números  inteiros,  e  apresente  como  resultado  se  o  segundo 
+                    número informado é ou não um divisor do primeiro número informado.</p>
+            </div>
+            <div class="questionCode">
+                <details>
+                <summary>Veja o código</summary>
+                    <p> let numero1 = parseInt(prompt("Digite um numero: "))<br>
+                        let numero2 = parseInt(prompt("Digite outro numero: "))<br>
+                    
+                        if(numero2 % numero1 == 0){<br>
+                            alert("O numero: " + numero2 + " é divisivel por " + numero1)<br>
+                        } else{<br>
+                            alert("O numero: " + numero2 + " não é divisivel por " + numero1)<br>
+                        }</p>
+                
+                </details>
+            </div>
+            <div class="questionButtons">
+                <button onClick="exercicio10()">Rodar exercicio</button>
+            </div>
+        </div>
+    </section>
+    
+    <script src="exercicioProgDecisaoOpLogicos.js"></script>
+</body>
+</html>

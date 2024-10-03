@@ -1,6 +1,7 @@
+//Lista 4.1
+
 /*Desenvolver um programa que pergunte um número. Se este número for maior que 20, então ele deverá exibir a 
 metade deste número, senão, ele deverá exibir o número sem alterações. */
-
 function exercicio01(){
     let numero = parseFloat(prompt("Digite um numero:"))
 
@@ -13,7 +14,6 @@ function exercicio01(){
 
 /*Desenvolver um programa que permita ao aluno responder qual a capital do Brasil. O programa deverá exibir se 
 a resposta está certa ou errada. */
-
 function exercicio02(){
     let capital = prompt("Digite a capital do Brasil");
 
@@ -28,7 +28,6 @@ function exercicio02(){
 
 /*Desenvolver um programa que pergunte um número, e apresente como resposta se o referido número é par ou 
 é ímpar.  */
-
 function exercicio03(){
     let numero = parseFloat(prompt("Digite um numero"))
 
@@ -42,7 +41,6 @@ function exercicio03(){
 /*Desenvolver  um  programa  que  pergunte  um  valor  numérico  inteiro  e  faça  a  exibição  desse  valor  caso  seja 
 divisível por 4 e 5. Não sendo divisível por 4 e 5, o programa deverá exibir a mensagem “Valor não é divisível por 
 4 e 5”. */
-
 function exercicio04(){
     let numero = parseInt(prompt("Digite um numero inteiro"))
 
@@ -53,12 +51,10 @@ function exercicio04(){
     }
 }
 
-
 /*Desenvolver um programa que pergunte 4 notas escolares de um aluno e exiba mensagem informando que o 
 aluno  foi  aprovado  se  a  média  escolar  for  maior  ou  igual  a  5.  Se  o  aluno  não  foi  aprovado,  indicar  uma 
 mensagem informando essa condição. Apresentar junto com a mensagem de aprovação ou reprovação o valor 
 da média obtida pelo aluno. */
-
 function exercicio05(){
     let nota1 = parseFloat(prompt("Digite a primeira nota: "))
     let nota2 = parseFloat(prompt("Digite a segunda nota: "))
@@ -76,7 +72,6 @@ function exercicio05(){
 
 /*Desenvolver um programa que pergunte dois valores numéricos inteiros e apresente o valor da diferença entre o 
 maior valor e o menor valor lido. */
-
 function exercicio06(){
     let numero1 = parseInt(prompt("Digite um numero"))
     let numero2 = parseInt(prompt("Digite outro numero"))
@@ -90,7 +85,6 @@ function exercicio06(){
  
 /*Desenvolver um programa que pergunte um valor inteiro positivo ou negativo, e exiba como resposta o módulo 
 deste valor, ou seja, o número lido como sendo positivo.*/
-
 function exercicio07(){
     let numero = parseInt(prompt("Digite um valor"))
 
@@ -102,7 +96,6 @@ function exercicio07(){
 }
 
 /*Desenvolver um programa que pergunte um número inteiro qualquer e verifique se ele está na faixa de 1 a 10. */
-
 function exercicio08(){
     let numero = parseInt(prompt("Digite um numero de 1 a 10"))
     if(numero < 1 || numero > 10){
@@ -114,7 +107,6 @@ function exercicio08(){
 
 /* Desenvolver um programa que pergunte um número e exiba a informação de que ele é positivo, negativo ou 
 nulo.*/ 
- 
 function exercicio09(){
     let numero = parseInt(prompt("Digite um numero"))
 
@@ -130,7 +122,6 @@ function exercicio09(){
 
 /*Desenvolver  um  programa  que  pergunte  dois  números  inteiros,  e  apresente  como  resultado  se  o  segundo 
 número informado é ou não um divisor do primeiro número informado. */
- 
 function exercicio10(){
     let numero1 = parseInt(prompt("Digite um numero: "))
     let numero2 = parseInt(prompt("Digite outro numero: "))
@@ -144,9 +135,15 @@ function exercicio10(){
  
 /*Desenvolver  um  programa  que  pergunte  um  número  de  3  casas  e  apresente  como  resultado  somente  o 
 algarismo das centenas.*/
-
-function exercicio10(){
+function exercicio11(){
     let numero = parseFloat(prompt("Digite um numero: "))
+    let centena
+
+    if(numero < 100 || numero > 1000){
+        alert("Numero digitado não contém 3 digitos")
+    } else{
+        centena = numero / 100
+    }
     
 }
  

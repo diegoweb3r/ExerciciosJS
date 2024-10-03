@@ -1,5 +1,6 @@
-/*Desenvolver um programa que exiba os números de 1 a 100.*/
+// Lista 05.1
 
+/*Desenvolver um programa que exiba os números de 1 a 100.*/
 function exercicio01(){
     let i = 1;
 
@@ -10,7 +11,6 @@ function exercicio01(){
 }
 
 /* Desenvolver um programa que exiba os números em ordem decrescente de 100 até 1 */
-
 function exercicio02(){
     let i = 100;
 
@@ -21,7 +21,6 @@ function exercicio02(){
 }
 
 /* Desenvolver um programa que apresente os quadrados dos números inteiros de 15 a 200. */
-
 function exercicio03(){
     let i = 15;
 
@@ -33,8 +32,6 @@ function exercicio03(){
 
 /* Desenvolver um programa que apresente o valor da soma dos cem primeiros números inteiros (1 + 2 + 3 + 4 + ...
 + 97 + 98 + 99 + 100) */
-
-
 function exercicio04(){
     let i = 1;
     let soma = 0;
@@ -57,7 +54,6 @@ Considerando como exemplo o fornecimento do número 2
 2 . 5 = 10
 (...)
 2 . 10 = 20 */
-
 function exercicio05(){
     let i = 1;
     let tabuada = 5;
@@ -68,11 +64,8 @@ function exercicio05(){
 }
 }
 
-
 /* Desenvolver um programa que leia um número n qualquer menor ou igual a 50 e apresente o valor obtido da
 multiplicação sucessiva de n por 3 enquanto o produto for menor que 250. (n x 3; n x 3 x 3; n x 3 x 3 x 3 etc...) */
-
-
 function exercicio06(){
     let n = parseInt(prompt("Digite um numero menor ou igual que 50:"));
 
@@ -91,8 +84,6 @@ function exercicio06(){
 saber se o número é divisível por 4 será necessário verificar a lógica desta condição com o comando if. Sendo
 divisível, mostre-o; não sendo, passe para o próximo passo. A variável que controla o contador deve ser iniciada
 com valor 1. */
-
-
 function exercicio07(){
     let i = 1;
 
@@ -108,8 +99,6 @@ function exercicio07(){
 /* Desenvolver um programa que apresente todos os valores numéricos inteiros ímpares situados na faixa de 0 a
 20. Para saber se o número é ímpar, será necessário verificar essa condição com o comando if. Sendo ímpar,
 mostre-o; não sendo, passe para o próximo passo */
-
-
 function exercicio08(){
     let i = 0;
 
@@ -121,9 +110,9 @@ function exercicio08(){
         i++;
     }    
 }
+
 /* Elaborar um programa que apresente no final a soma dos valores pares existentes na faixa de 0 até 500. Utilize
 um laço que efetue a variação de 2 em 2. */
-
 function exercicio09(){
     let i = 0;
     let soma = 0;
@@ -136,7 +125,7 @@ function exercicio09(){
     console.log(soma)
 }
 
-/* ) Desenvolver um programa que apresente as potências de 3 variando de 0 a 15. Deve ser considerado que
+/* Desenvolver um programa que apresente as potências de 3 variando de 0 a 15. Deve ser considerado que
 qualquer número elevado a zero é 1, e elevado a 1 é ele próprio. A apresentação deve observar a seguinte
 exibição na tela:
 3 elevado à 0 = 1
@@ -144,7 +133,6 @@ exibição na tela:
 3 elevado à 2 = 9
 (...)
 3 elevado à 15 = 14348907 */
-
 function exercicio10(){
   
     let i = 0;
@@ -157,7 +145,7 @@ function exercicio10(){
     }  
 }
 
-/* ) Desenvolver um programa que apresente as potências de 3 variando de 0 a 15. Deve ser considerado que
+/* Desenvolver um programa que apresente as potências de 3 variando de 0 a 15. Deve ser considerado que
 qualquer número elevado a zero é 1, e elevado a 1 é ele próprio. A apresentação deve observar a seguinte
 exibição na tela:
 3 elevado à 0 = 1
@@ -165,8 +153,6 @@ exibição na tela:
 3 elevado à 2 = 9
 (...)
 3 elevado à 15 = 14348907 */
-
-
 function exercicio11(){
     let i = 0;
 
@@ -179,7 +165,6 @@ function exercicio11(){
 /* Elaborar um programa que apresente o valor de uma potência de uma base qualquer (Variável b) elevada a um
 expoente qualquer (Variável e), ou seja, de be
 . (Sem usar Math.pow();) */
-
 function exercicio12(){
     let b = 5;
     let  e = 3;
@@ -198,7 +183,6 @@ function exercicio12(){
 menor número que foram digitados, além da média entre TODOS os números digitados pelo usuário. A inserção
 de números deve parar quando o usuário digitar o número -1, e este número -1 não deve ser considerado nem
 como maior, nem como menor, e nem na contagem da média. */
-
 function exercicio13(){
     let maior = 0;
     let menor = 1000000;
@@ -231,7 +215,6 @@ function exercicio13(){
 }
 
 /* Desenvolver um programa que imprima a tabuada de 3 a 6 */
-
 function exercicio14(){
     let i = 0;
     let b = 3;
@@ -251,9 +234,6 @@ function exercicio14(){
 
 /* Desenvolver um programa que calcule o fatorial do número 5, ou seja, 5!. Desta forma, temos que 5! = 5 . 4 . 3 .
 2 . 1 ou 5! = 1 . 2 . 3 . 4 . 5, equivalente a 120 */
-
-
-
 function exercicio15(){
 
     let i = 5;
