@@ -52,12 +52,13 @@
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p>   let i = 100;<br>
-
-                        while (i > 0){<br>
+                    <p>     let i = 100;<br>
+                            <br>
+                            while (i &gt; 0) {<br>
                             console.log(i)<br>
-                            i--;<br>    
-                        }</p>
+                            i--;<br>
+                            }<br>
+                        </p>
                 
                 </details>
             </div>
@@ -70,6 +71,7 @@
                 <span>03</span>
                 <p>Desenvolver um programa que apresente os quadrados dos números inteiros de 15 a 200.</p>
                 <p class="consoleAlert">Esse exericio é resolvido através do console. Abra a opção de inspecionar para rodar o exercicio.</p>
+                
             </div>
             <div class="questionCode">
                 <details>
@@ -118,6 +120,7 @@
                 <p>Desenvolver um programa que apresente os resultados de uma tabela de um número qualquer. Ela deve ser<br>
                     impressa no seguinte formato:<br>
                     Considerando como exemplo o fornecimento do número 2<br>
+                    <p class="consoleAlert">Esse exericio é resolvido através do console. Abra a opção de inspecionar para rodar o exercicio.</p>
                     2 . 1 = 2<br>
                     2 . 2 = 4<br>
                     2 . 3 = 6<br>
@@ -145,18 +148,22 @@
         <div class="questionCard">
             <div class="questionText">
                 <span>06</span>
-                <p>Fazer um programa que pergunte uma temperatura ao usuário, em graus Fahrenheit, e apresente esta
-                    temperatura convertida em graus Celsius. A fórmula da conversão é c	=	(f	–	32)	x	5	:	9	, onde c	 é a temperatura
-                    em graus Celsius e f		em Fahrenheit.</p>
+                <p>Desenvolver um programa que leia um número n qualquer menor ou igual a 50 e apresente o valor obtido da multiplicação sucessiva de n por 3 enquanto o produto for menor que 250. (n x 3; n x 3 x 3; n x 3 x 3 x 3 etc...)</p>
+                <p class="consoleAlert">Esse exericio é resolvido através do console. Abra a opção de inspecionar para rodar o exercicio.</p>
             </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let temperaturaFahrenheit = parseFloat(prompt("Digite a temperatura em Fahrenheit: "));<br>
-                        let temperaturaCelsius = (temperaturaFahrenheit - 32) * 5 / 9;<br>
-                        
-                        alert(`A temperatura em Fahrenheit é de ${temperaturaFahrenheit} e em Celsius é de ${temperaturaCelsius}`)<br></p>
-                
+                    <p>   let n = parseInt(prompt("Digite um numero menor ou igual que 50:"));<br>
+                            if (n &lt;= 50) {<br>
+                            while (n &lt; 250) {<br>
+                            console.log(n);<br>
+                            n *= 3;<br>
+                            }<br>
+                            } else {<br>
+                            console.log("O número deve ser menor ou igual a 50.");<br>
+                            }<br><br></p>
+                                            
                 </details>
             </div>
             <div class="questionButtons">
@@ -166,17 +173,26 @@
         <div class="questionCard">
             <div class="questionText">
                 <span>07</span>
-                <p>Fazer um algoritmo que pergunte 3 números e apresente a média aritmética entre estes 3 números</p>
+                <p>Desenvolver um programa que apresente todos os números divisíveis por 4 que sejam menores que 200. Para 
+                se o número é divisível por 4 será necessário verificar a lógica desta condição com o comando if. Sendo 
+                divisível, mostre-o; não sendo, passe para o próximo passo. A variável que controla o contador deve ser iniciada com valor 1. </p>
+                <p class="consoleAlert">Esse exericio é resolvido através do console. Abra a opção de inspecionar para rodar o exercicio.</p>
             </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let numero1 = parseFloat(prompt("Digite o primeiro numero: "));<br>
-                        let numero2 = parseFloat(prompt("Digite o segundo numero: "));<br>
-                        let numero3 = parseFloat(prompt("Digite o terceiro numero: "));<br>
-                        let media = (numero1 + numero2 + numero3) / 3;<br>
-                        
-                        alert(`Os numeros digitados foram: ${numero1}, ${numero2} e ${numero3}. A média aritmetica é ${media}.`)<br></p>
+                    <p>
+                     let i = 1;<br>
+                
+                    while (i &lt;= 200) {<br>
+                    if (i % 4 == 0) {<br>
+                    console.log(i)<br>
+                    }<br>
+    
+                    i++;<br>
+                    }<br>
+
+                    </p>
                 
                 </details>
             </div>
@@ -187,18 +203,21 @@
         <div class="questionCard">
             <div class="questionText">
                 <span>08</span>
-                <p>Fazer um programa que calcule e apresente a quantidade de litros que um automóvel gastará em uma viagem. O
-                    programa deve coletar as seguintes informações: Distância a percorrer na viagem, em quilômetros; qual é o
-                    valor do consumo médio do automóvel, em quilômetros por litro.</p>
+                <p>Desenvolver um programa que apresente todos os valores numéricos inteiros ímpares situados na faixa de 0 a 
+                    20. Para saber se o número é ímpar, será necessário verificar essa condição com o comando if. Sendo ímpar, 
+                    mostre-o; não sendo, passe para o próximo passo. </p>
+                    <p class="consoleAlert">Esse exericio é resolvido através do console. Abra a opção de inspecionar para rodar o exercicio.</p>
             </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let distancia = parseFloat(prompt("Digite a distancia, em quilometros, a percorrer:"));<br>
-                        let valorConsumoMedio = parseFloat(prompt("Digite o consumo medio, em quilometros, do veiculo:"))<br>
-                        let qtdLitros = distancia / valorConsumoMedio;<br>
-                    
-                        alert(`Voce vai percorrer ${distancia}Km e consumira cerca de ${qtdLitros}lts de gasolina.`)<br></p>
+                    <p>   let i = 0;<br>
+                        while (i &lt;= 20) {<br>
+                        if (i % 2 == 1) {<br>
+                        console.log(i)<br>
+                        }<br>
+                        i++;<br>
+                        }<br></p>
                 
                 </details>
             </div>
@@ -209,19 +228,20 @@
         <div class="questionCard">
             <div class="questionText">
                 <span>09</span>
-                <p>Fazer um algoritmo que pergunte 1 número e apresente: <br>
-                    a O próprio número <br>
-                    b O quadrado deste número <br>
-                    c A raiz quadrada deste número <br></p>
+                <p>Elaborar um programa que apresente no final a soma dos valores pares existentes na faixa de 0 até 500. Utilize um laço que efetue a variação de 2 em 2.</p>
             </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let numero = parseFloat(prompt("Digite um numero:"));<br>
-                        let numeroQuadrado = Math.pow(numero, 2);<br>
-                        let numeroRaiz = Math.sqrt(numero);<br>
-                        
-                        alert(`O numero digitado foi: ${numero}. O numero ao quadrado é ${numeroQuadrado} e a raiz quadrada é ${numeroRaiz}`)<br></p>
+                    <p>   let i = 0;<br>
+                        let soma = 0;<br>
+                        <br>
+                        while (i &lt;= 500) {<br>
+                        soma += i;<br>
+                        i = i + 2;<br>
+                        }<br>
+                        <br>
+                        console.log(soma)<br></p>
                 
                 </details>
             </div>
@@ -232,19 +252,26 @@
         <div class="questionCard">
             <div class="questionText">
                 <span>10</span>
-                <p>Fazer um algoritmo que efetue o cálculo do valor de uma prestação em atraso, utilizando a fórmula 
-                    prestação	=	valor	+	(valor	x	(taxa	:	100)	x	tempo	em	dias).</p>
+                <p>Desenvolver  um  programa  que  apresente  as  potências  de  3  variando  de  0  a  15.  Deve  ser  considerado  que qualquer número elevado a zero é 1, e elevado a 1 é ele próprio. A apresentação deve observar a seguinte 
+                    exibição na tela: <br>
+ 
+                        3 elevado à 0 = 1<br> 
+                        3 elevado à 1 = 3 <br>
+                        3 elevado à 2 = 9 <br>
+                        (...) <br>
+                        3 elevado à 15 = 14348907<br></p>
             </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let prestacao = parseFloat(prompt("Digite o valor da prestação:"));<br>
-                        let diasAtraso = parseInt(prompt("Quantos dias esta em atraso?"));<br>
-                        let taxa = parseFloat(prompt("Qual a taxa para atrasos?"));<br>
-                        
-                        let prestacaoAtualizada = prestacao + (prestacao * (taxa / 100) * diasAtraso); <br>
-                        
-                        alert(`A prestação original era de R$${prestacao} e estava em atraso em ${diasAtraso} dias. A taxa de atraso é de ${taxa}% ao dia. Sua parcela atualizada é de: R$${prestacaoAtualizada}`)<br></p>
+                    <p>   let i = 0;<br>
+                        potencia = 1;<br>
+                        <br>
+                        while (i &lt;= 15) {<br>
+                        console.log(`3 elevado a ${i} = ${potencia}`);<br>
+                        potencia *= 3;<br>
+                        i++;<br>
+                        }<br></p>
                 
                 </details>
             </div>

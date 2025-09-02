@@ -85,30 +85,30 @@ section{
 }
 
 .imgContainer .javascriptImg{
-    width: 200px;
-    height: 200px;
+    width: 12vw;
+    height: auto;
     position: absolute;
-    top: 35px;
+    top: 5%;
     z-index: 99;
 }
 
 .imgContainer .htmlImg{
-    width: 150px;
-    height: 150px;
+    width: 9vw;
+    height: auto;
     position: absolute;
     z-index: 1;
-    bottom: 20px;
-    left: 50px;
+    bottom: 35%;
+    left: 20%;
     transform: rotate(35deg);
 }
 
 .imgContainer .cssImg{
-    width: 115px;
-    height: 115px;
+    width: 7vw;
+    height: auto;
     position: absolute;
     z-index: 0;
-    bottom: 15px;
-    right: 70px;
+    bottom: 30%;
+    right: 30%;
     transform:rotate(-35deg);
 }
 

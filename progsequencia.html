@@ -69,23 +69,20 @@
         <div class="questionCard">
             <div class="questionText">
                 <span>03</span>
-                <p>Elaborar um programa que pergunte quatro valores inteiros e apresente 2 resultados:<br>
-                    a Resultado de suas adições<br>
-                    b Resultado de suas multiplicações<br></p>
+                <p>Fazer um programa que pergunte um valor em Dólares e apresente o equivalente em Reais. Considere U$1,00 =
+                    R$3,80.</p>
             </div>
             <div class="questionCode">
                 <details>
                 <summary>Veja o código</summary>
-                    <p> let valor1 = parseInt(prompt("Digite o primeiro valor inteiro:"));<br>
-                        let valor2 = parseInt(prompt("Digite o segundo valor inteiro:"));<br>
-                        let valor3 = parseInt(prompt("Digite o terceiro valor inteiro:"));<br>
-                        let valor4 = parseInt(prompt("Digite o quarto valor inteiro:"));<br>
-                    
-                        let soma = valor1 + valor2 + valor3 + valor4;<br>
-                        let multiplicações = valor1 * valor2 * valor3 * valor4;<br>
-                    
-                        alert(`Os valores digitados foram: ${valor1}, ${valor2}, ${valor3}, ${valor4}. A soma dos valores é ${soma} e a multiplicação é ${multiplicações}`);<br></p>
-                
+                    <p>const real = 3.8;<br>
+                        let valorEmDolar = parseFloat(prompt("Digite um valor em dolar:"));<br>
+                        let cotacao = real * valorEmDolar;<br>
+                      
+                        alert(<br>
+                          `O valor digitado foi $${valorEmDolar} e o equivalente em real na cotacao de R$${real} é: R$${cotacao}`
+                        ); </p>
+
                 </details>
             </div>
             <div class="questionButtons">
@@ -109,7 +106,7 @@
                 </details>
             </div>
             <div class="questionButtons">
-                <button onClick="exercicio02()">Rodar exercicio</button>
+                <button onClick="exercicio04()">Rodar exercicio</button>
             </div>
         </div>
         <div class="questionCard">

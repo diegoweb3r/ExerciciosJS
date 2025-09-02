@@ -1,7 +1,7 @@
 /* 01 Desenvolver um programa que pergunte ao usuário o seu nome completo e seu sexo. Em seguida, o programa
 deve apresentar os dados anteriormente informados. */
 
-/*No navegador*/
+
 
 function exercicio01() {
   let nome = prompt("Qual seu nome?");
@@ -9,6 +9,10 @@ function exercicio01() {
 
   alert(`Seu nome é ${nome} e seu sexo é ${sexo}`);
 }
+
+/*Elaborar um programa que pergunte quatro valores inteiros e apresente 2 resultados:
+a) Resultado de suas adições
+b) Resultado de suas multiplicações*/
 
 function exercicio02() {
   let valor1 = parseInt(prompt("Digite o primeiro valor inteiro:"));
@@ -23,6 +27,9 @@ function exercicio02() {
     `Os valores digitados foram: ${valor1}, ${valor2}, ${valor3}, ${valor4}. A soma dos valores é ${soma} e a multiplicação é ${multiplicações}`
   );
 }
+
+/*Fazer um programa que pergunte um valor em Dólares e apresente o equivalente em Reais. Considere U$1,00 =
+R$3,80.*/
 
 function exercicio03() {
   const real = 3.8;
@@ -92,4 +99,10 @@ let numeroRaiz = Math.sqrt(numero);
 alert(`O numero digitado foi: ${numero}. O numero ao quadrado é ${numeroQuadrado} e a raiz quadrada é ${numeroRaiz}`)
 }
 
-function exercicio10() {}
+function exercicio10() {
+  let prestacao = parseFloat(prompt("Digite o valor da prestação:"));
+let diasAtraso = parseInt(prompt("Quantos dias esta em atraso?"));
+let taxa = parseFloat(prompt("Qual a taxa para atrasos?"));
+let prestacaoAtualizada = prestacao + (prestacao * (taxa / 100) * diasAtraso);
+alert(`A prestação original era de R$${prestacao} e estava em atraso em ${diasAtraso} dias. A taxa de atraso é de ${taxa}% ao dia. Sua parcela atualizada é de: R$${prestacaoAtualizada}`)
+}
