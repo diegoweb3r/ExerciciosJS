@@ -1,36 +1,51 @@
-<h1 align="center"> Exercicios JavaScript</h1>
+<h1 align="center"> 📌 Exercicios de logica de programação em Javascript  </h1>
 
-<p align="center">
-Projeto criado para a resolução de exercicios desenvolvidos na faculdade de Analise e Desenvolvimento de Sistema <a href="-">Prof. Fabricio <br/>
-</p>
+<h2 align="center"> 📖 Descrição   </h2>
+<p align="justify"> Projeto para resolver exercicios, inicialmente apresentados para serem resolvidos com Java, em Javascript</p>
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Comentários</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</p>
+---
 
+### 🛠 Tecnologias Utilizadas  
+- HTML5  
+- CSS3  
+- JavaScript  
+- Git / Github
+---
 
+### ⚙️ Funcionalidades & Melhorias
+- [🟢] Design   
+- [🟢] Programação em sequencia 
+- [🟢] Prog. com decisão e operadores lógicos   
+- [🔴] Programação em laços de repetição no inicio
+- [🔴] Programação em laços de repetição no Fim
+- [🔴] Programação em laços de repetição com variavel de controle
+- [🔴] Programação com multipla escolha
+- [🔴] Vetores
+- [🔴] Matrizes
+- [🔴] Melhorias no design 
 
-## 🚀 Tecnologias
+---
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+### 👤 Autor
+[Diego Felipe Weber](https://www.linkedin.com/in/diego-weber-474a5aa6/)   
+[Fabricio Curvello](https://www.linkedin.com/in/fabriciocurvello/)
 
-- HTML e CSS
-- JavaScript
-- Git e Github
+---
 
+### 🗣️ Comentários
+<p align="justify">O projeto surgiu a partir do interesse em aprofundar os estudos em JavaScript, utilizando como base a lista de exercícios fornecida pelo professor Fabrício, que originalmente deveriam ser resolvidos em Java.
 
-## 💻 Projeto
+Inicialmente, não havia a intenção de transformá-lo em um site para apresentação, porém, devido ao interesse em front-end, foi desenvolvido um design prático que possibilita a demonstração dos exercícios. As soluções podem ser executadas tanto por meio de prompts quanto pelo console, além de oferecer a opção de visualizar o código correspondente a cada resposta.</p>
 
-Exercicios passados em sala de aula com o intuito de apredizagem de Logica de Programação. Em sala, os exercicios foram resolvidos em Java. 
-Pelo meu interesse no desenvolvimento Web e aprendizado em JavaScript, estou respondendo todas as listas utilizando a linguagem.
+---
 
+### 🤝 Contribuição
+Contribuições são sempre bem-vindas!   
+Se quiser colaborar:
+1. Faça um fork do projeto
+2. Crie uma nova branch com sua feature (git checkout -b minha-feature)
+3. Realize o commit das alterações (git commit -m 'Adicionei minha feature')
+4. Faça o push da branch (git push origin minha-feature)
+5. Abra um Pull Request
 
-## :book: Comentários
-Não existia a ideia de projeto no inicio, era apenas a resolução das listas de exercicios, mas dado o meu interesse em desenvolvimento front-end, decidir criar este projeto completo para a pratica.
-Ainda em Construção
-
-
-<hr>
-<p align="center">Feito por Diego Web3r</p>
+---
